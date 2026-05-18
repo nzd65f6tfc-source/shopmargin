@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TikTok Shop Fee Calculator for US Sellers | ShopMargin</title>
+    <meta
+      name="description"
+      content="Free TikTok Shop fee calculator for US sellers. Estimate seller fees, commission fees, creator payouts, total selling costs, profit margin, and break-even ROAS."
+    >
+    <link rel="canonical" href="https://shopmargin.example/tiktok-shop-fee-calculator">
+    <meta property="og:title" content="TikTok Shop Fee Calculator for US Sellers">
+    <meta
+      property="og:description"
+      content="Estimate TikTok Shop fees, creator commission, selling costs, profit margin, and break-even ROAS."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shopmargin.example/tiktok-shop-fee-calculator">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "TikTok Shop Fee Calculator",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "A free TikTok Shop fee calculator for estimating seller fees, creator commission, total costs, profit margin, and break-even ROAS."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What fees does this TikTok Shop calculator include?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It includes an editable TikTok Shop fee rate, creator commission, coupon or discount, shipping cost, seller shipping subsidy, ad spend, and expected refund loss."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the TikTok Shop fee rate fixed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Fees can vary by category, seller account, promotion, and policy changes. Update the fee field with your current Seller Center rate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is break-even ROAS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Break-even ROAS is the return on ad spend where revenue covers product cost, fees, shipping, commissions, refunds, and promotions but does not yet create profit."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="ShopMargin home">
+        <span class="brand-mark">SM</span>
+        <span>ShopMargin</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#calculator">Calculator</a>
+        <a href="#tools">Tools</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Free TikTok Shop fee calculator</p>
+          <h1>TikTok Shop Fee Calculator</h1>
+          <p class="hero-text">
+            Estimate US seller fees, creator commission, total costs, net profit,
+            margin, and break-even ROAS before you price or promote a product.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#tools">View all tools</a>
+          </div>
+        </div>
+
+        <div class="tool-panel" id="calculator">
+          <form class="calculator" id="profitForm" aria-label="TikTok Shop fee calculator">
+            <label>
+              Seller country
+              <span class="input-wrap">
+                <select id="country">
+                  <option value="US" selected>United States</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="PH">Philippines</option>
+                  <option value="MY">Malaysia</option>
+                  <option value="Custom">Custom</option>
+                </select>
+              </span>
+            </label>
+
+            <label>
+              Currency
+              <span class="input-wrap">
+                <select id="currency">
+                  <option value="USD" selected>USD</option>
+                  <option value="GBP">GBP</option>
+                  <option value="PHP">PHP</option>
+                  <option value="MYR">MYR</option>
+                </select>
+              </span>
+            </label>
+
+            <label>
+              Product category
+              <span class="input-wrap">
+                <select id="category">
+                  <option value="general" selected>General merchandise</option>
+                  <option value="beauty">Beauty & personal care</option>
+                  <option value="fashion">Fashion & accessories</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="home">Home & kitchen</option>
+                </select>
+              </span>
+            </label>
+
+            <label>
+              Selling price
+              <span class="input-wrap">
+                <span class="currency-symbol">$</span>
+                <input id="price" type="number" min="0" step="0.01" value="49.00">
+              </span>
+            </label>
+
+            <label>
+              Product cost
+              <span class="input-wrap">
+                <span class="currency-symbol">$</span>
+                <input id="cost" type="number" min="0" step="0.01" value="14.00">
+              </span>
+            </label>
+
+            <label>
+              Shipping cost
+              <span class="input-wrap">
+                <span class="currency-symbol">$</span>
+                <input id="shipping" type="number" min="0" step="0.01" value="6.50">
+              </span>
+            </label>
+
+            <label>
+              Ad spend per order
+              <span class="input-wrap">
+                <span class="currency-symbol">$</span>
+                <input id="adSpend" type="number" min="0" step="0.01" value="8.00">
+              </span>
+            </label>
+
+            <label>
+              TikTok Shop fee rate
+              <span class="input-wrap">
+                <input id="platformFee" type="number" min="0" step="0.01" value="8">
+                <span>%</span>
+              </span>
+            </label>
+
+            <label>
+              Affiliate commission
+              <span class="input-wrap">
+                <input id="affiliateCommission" type="number" min="0" step="0.1" value="10">
+                <span>%</span>
+              </span>
+            </label>
+
+            <label>
+              Coupon or discount
+              <span class="input-wrap">
+                <span class="currency-symbol">$</span>
+                <input id="discount" type="number" min="0" step="0.01" value="3.00">
+              </span>
+            </label>
+
+            <label>
+              Seller shipping subsidy
+              <span class="input-wrap">
+                <span class="currency-symbol">$</span>
+                <input id="shippingSubsidy" type="number" min="0" step="0.01" value="4.00">
+              </span>
+            </label>
+
+            <label>
+              Refund rate
+              <span class="input-wrap">
+                <input id="refundRate" type="number" min="0" max="100" step="0.1" value="5">
+                <span>%</span>
+              </span>
+            </label>
+
+            <label>
+              Monthly orders
+              <span class="input-wrap">
+                <input id="orders" type="number" min="0" step="1" value="300">
+              </span>
+            </label>
+          </form>
+
+          <aside class="results" aria-live="polite">
+            <div class="result-card featured">
+              <span>Total selling costs per order</span>
+              <strong id="totalCosts">$0</strong>
+            </div>
+            <div class="result-grid">
+              <div class="result-card">
+                <span>TikTok Shop fee</span>
+                <strong id="platformFeeAmount">$0</strong>
+              </div>
+              <div class="result-card">
+                <span>Creator commission</span>
+                <strong id="affiliateAmount">$0</strong>
+              </div>
+              <div class="result-card">
+                <span>Net revenue after discount</span>
+                <strong id="netRevenue">$0</strong>
+              </div>
+              <div class="result-card">
+                <span>Net profit per order</span>
+                <strong id="profitPerOrder">$0</strong>
+              </div>
+              <div class="result-card">
+                <span>Profit margin</span>
+                <strong id="margin">0%</strong>
+              </div>
+              <div class="result-card">
+                <span>Break-even ROAS</span>
+                <strong id="roas">0x</strong>
+              </div>
+            </div>
+            <div class="result-strip">
+              <span>Estimated monthly profit</span>
+              <strong id="monthlyProfit">$0</strong>
+              <span>Suggested 25% margin price</span>
+              <strong id="suggestedPrice">$0</strong>
+            </div>
+            <div class="insight" id="insight">
+              Enter your product numbers to see whether the margin is healthy
+              after TikTok Shop fees and seller costs.
+            </div>
+            <p class="note">
+              Editable defaults keep this calculator useful when TikTok Shop
+              changes category fees, commission rules, promotions, taxes, or
+              shipping programs. Confirm current rates in Seller Center.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="tools" class="tools-section">
+        <div class="section-heading">
+          <p class="eyebrow">More seller tools</p>
+          <h2>Build a complete TikTok Shop seller toolkit</h2>
+          <p>
+            Start with seller fees, then expand into adjacent high-intent tools
+            US sellers search for when pricing products, recruiting creators, and managing ads.
+          </p>
+        </div>
+        <div class="tool-list">
+          <article>
+            <h3>TikTok Shop Fee Calculator</h3>
+            <p>Estimate marketplace fees by selling price and category assumptions.</p>
+          </article>
+          <article>
+            <h3>Affiliate Commission Calculator</h3>
+            <p>Find the commission you can offer creators while keeping margin.</p>
+          </article>
+          <article>
+            <h3>Break-even ROAS Calculator</h3>
+            <p>Find the ad return needed before a TikTok Shop order becomes profitable.</p>
+          </article>
+          <article>
+            <h3>Product Pricing Calculator</h3>
+            <p>Set a target selling price after fees, coupons, shipping, and creator payouts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="content">
+          <h2>How to calculate TikTok Shop fees</h2>
+          <p>
+            TikTok Shop seller fees usually include a marketplace or referral fee,
+            while your real selling cost can also include creator affiliate
+            commission, coupons, seller-funded shipping, fulfillment, ads, and
+            expected refund loss.
+          </p>
+          <p>
+            A practical formula is: net revenue after discount minus product cost,
+            shipping, seller subsidy, TikTok Shop fee, creator commission, ad
+            spend, and expected refunds. This gives sellers a clearer view of
+            whether a product can scale through creators or paid traffic.
+          </p>
+          <h3>Why this calculator uses editable assumptions</h3>
+          <p>
+            TikTok Shop fees can vary by country, category, promotion, fulfillment
+            setup, and seller account. Instead of hiding one fixed rate, this tool
+            lets you update the fee rate, commission, discounts, and shipping
+            assumptions so the result matches your current Seller Center numbers.
+          </p>
+          <h3>TikTok Shop fee formula</h3>
+          <p>
+            A simple fee estimate is: net revenue multiplied by your TikTok Shop
+            fee rate. A better seller estimate also adds creator commission,
+            shipping subsidy, ad spend, product cost, and expected refund loss.
+          </p>
+          <div class="formula-box">
+            <span>Net revenue = selling price - coupon or discount</span>
+            <span>Total costs = product cost + shipping + subsidy + TikTok fee + creator commission + ads + refund loss</span>
+            <span>Net profit = net revenue - total costs</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="embed-section">
+        <div class="section-heading">
+          <p class="eyebrow">Share this calculator</p>
+          <h2>Embed the TikTok Shop fee calculator</h2>
+          <p>
+            Add this calculator to a seller guide, agency blog, or ecommerce
+            resource page. Keep the credit link so readers can find the full tool.
+          </p>
+        </div>
+        <div class="embed-box">
+          <code id="embedCode">&lt;iframe src="https://shopmargin.example/tiktok-shop-fee-calculator" width="100%" height="760" style="border:1px solid #d9e2dc;border-radius:8px;" title="TikTok Shop Fee Calculator"&gt;&lt;/iframe&gt;</code>
+          <button class="button secondary" id="copyEmbed" type="button">Copy embed code</button>
+        </div>
+        <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+      </section>
+
+      <section id="faq" class="faq-section">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common TikTok Shop fee questions</h2>
+        </div>
+        <details>
+          <summary>What fees does this TikTok Shop calculator include?</summary>
+          <p>
+            It includes an editable TikTok Shop fee rate, creator commission,
+            coupon or discount, shipping cost, seller shipping subsidy, ad spend,
+            and expected refund loss.
+          </p>
+        </details>
+        <details>
+          <summary>Is the TikTok Shop fee rate fixed?</summary>
+          <p>
+            No. Fees can vary by category, seller account, promotion, and policy
+            changes. Use the default as a planning assumption and update the field
+            with your current Seller Center rate.
+          </p>
+        </details>
+        <details>
+          <summary>What is the TikTok Shop commission fee?</summary>
+          <p>
+            Sellers often use commission fee, referral fee, marketplace fee, or
+            platform fee to describe the percentage TikTok Shop charges on an
+            order. The exact rate can vary, so the calculator keeps it editable.
+          </p>
+        </details>
+        <details>
+          <summary>Does creator affiliate commission count as a TikTok Shop fee?</summary>
+          <p>
+            It is not the same as the platform fee, but it is still a real selling
+            cost when you use creators or affiliates to drive orders. This
+            calculator shows it separately.
+          </p>
+        </details>
+        <details>
+          <summary>Should I include coupons and shipping subsidies?</summary>
+          <p>
+            Yes. Seller-funded coupons, discounts, free shipping, and shipping
+            subsidies reduce your real margin and should be included before you
+            decide whether a product is profitable.
+          </p>
+        </details>
+        <details>
+          <summary>Why is my TikTok Shop profit negative?</summary>
+          <p>
+            Negative profit usually means product cost, fees, creator commission,
+            discounts, shipping, refunds, or ads are too high for the current
+            selling price. Try lowering costs, raising price, or reducing commission.
+          </p>
+        </details>
+        <details>
+          <summary>Is this calculator accurate for all countries and categories?</summary>
+          <p>
+            It is a planning tool, not an official fee statement. Use the country,
+            currency, category, and editable fee fields as assumptions, then
+            confirm current fee rates inside TikTok Shop Seller Center.
+          </p>
+        </details>
+        <details>
+          <summary>What is break-even ROAS?</summary>
+          <p>
+            Break-even ROAS is the return on ad spend where revenue covers product
+            cost, fees, shipping, commissions, refunds, and promotions but does not
+            yet create profit.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>ShopMargin</span>
+      <span>
+        Free TikTok Shop calculators for US sellers.
+        <a href="privacy.html">Privacy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

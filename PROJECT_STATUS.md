@@ -6,11 +6,11 @@ ShopMargin
 
 ## Current Phase
 
-Planning complete enough to begin v1 implementation.
+v1 is live on Cloudflare Pages.
 
 ## Current Decision
 
-The v1 page is being reworked into:
+The v1 page is:
 
 > TikTok Shop Fee Calculator for US Sellers
 
@@ -44,6 +44,26 @@ The v1 page is being reworked into:
 - Updated UI theme from green ecommerce styling to a restrained TikTok-inspired palette: ink black, cyan accent, and red highlight.
 - Added Cloudflare Pages deployment guide.
 5. Preserve pure frontend/static implementation.
+
+## Live Deployment
+
+- Cloudflare Pages URL: `https://shopmargin-7w9.pages.dev`
+- GitHub repository: `https://github.com/nzd65f6tfc-source/shopmargin`
+- Latest production URL placeholders have been replaced with the Pages URL.
+- Current deployment method: Cloudflare Pages Direct Upload.
+
+## Known Issues
+
+- Cloudflare GitHub integration is installed for `nzd65f6tfc-source/shopmargin`, but Cloudflare returned `Error connecting to git account`.
+- Follow-up task: repair GitHub integration so future `git push` changes deploy automatically.
+
+## Next Business/Launch Tasks
+
+1. Choose and connect a production domain.
+2. Add a real contact email to privacy and disclaimer pages.
+3. Submit the site to Google Search Console.
+4. Submit `sitemap.xml`.
+5. Monitor impressions for the primary keyword and related seller-fee keywords.
 
 ## Important Files
 

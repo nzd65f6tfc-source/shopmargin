@@ -14,14 +14,19 @@
 
 ## Deploy
 
-- Deploy static files to Cloudflare Pages.
+- Deploy static files to Cloudflare Pages. Done via Direct Upload.
 - Use framework preset `None`.
 - Leave build command empty.
 - Use `/` as the build output directory.
-- Confirm the main page loads at the final canonical URL.
-- Confirm `robots.txt` loads.
-- Confirm `sitemap.xml` loads.
+- Confirm the main page loads at the final canonical URL. Done for `https://shopmargin-7w9.pages.dev`.
+- Confirm `robots.txt` loads. Done.
+- Confirm `sitemap.xml` loads. Done.
 - Confirm `privacy` and `disclaimer` pages load.
+
+## Deployment Follow-Up
+
+- Repair Cloudflare GitHub integration. Current workaround is Direct Upload.
+- Once repaired, confirm `git push` triggers a Cloudflare Pages production deployment.
 
 ## After Deploy
 

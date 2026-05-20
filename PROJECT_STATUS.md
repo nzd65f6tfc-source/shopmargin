@@ -42,6 +42,7 @@ The v1 page is being reworked into:
 - Added canonical, Open Graph metadata, SoftwareApplication schema, and FAQPage schema with placeholder production URL.
 - Added privacy policy, disclaimer, robots.txt, and sitemap.xml placeholders for launch readiness.
 - Updated UI theme from green ecommerce styling to a restrained TikTok-inspired palette: ink black, cyan accent, and red highlight.
+- Added Cloudflare Pages deployment guide.
 5. Preserve pure frontend/static implementation.
 
 ## Important Files

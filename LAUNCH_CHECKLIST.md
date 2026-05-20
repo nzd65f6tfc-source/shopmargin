@@ -14,7 +14,10 @@
 
 ## Deploy
 
-- Deploy static files to Vercel, Netlify, Cloudflare Pages, or another static host.
+- Deploy static files to Cloudflare Pages.
+- Use framework preset `None`.
+- Leave build command empty.
+- Use `/` as the build output directory.
 - Confirm the main page loads at the final canonical URL.
 - Confirm `robots.txt` loads.
 - Confirm `sitemap.xml` loads.

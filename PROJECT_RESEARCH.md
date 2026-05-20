@@ -1,4 +1,4 @@
-# ShopMargin Research Notes
+# ShopFeeCalc Research Notes
 
 ## Current Goal
 
@@ -147,7 +147,7 @@ Updated first-page recommendation:
 
 Possible title tag:
 
-> TikTok Shop Fee Calculator for US Sellers | ShopMargin
+> TikTok Shop Fee Calculator for US Sellers | ShopFeeCalc
 
 ## To Validate Next
 

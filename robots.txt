@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shopmargin-7w9.pages.dev/sitemap.xml
+Sitemap: https://shopfeecalc.com/sitemap.xml

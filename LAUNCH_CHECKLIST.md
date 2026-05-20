@@ -18,7 +18,7 @@
 - Use framework preset `None`.
 - Leave build command empty.
 - Use `/` as the build output directory.
-- Confirm the main page loads at the final canonical URL. Done for `https://shopmargin-7w9.pages.dev`.
+- Confirm the main page loads at the final canonical URL. Done for `https://shopfeecalc.com`.
 - Confirm `robots.txt` loads. Done.
 - Confirm `sitemap.xml` loads. Done.
 - Confirm `privacy` and `disclaimer` pages load.

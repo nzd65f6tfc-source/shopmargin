@@ -2,7 +2,7 @@
 
 ## Project
 
-ShopMargin
+ShopFeeCalc
 
 ## Current Phase
 
@@ -48,8 +48,10 @@ The v1 page is:
 ## Live Deployment
 
 - Cloudflare Pages URL: `https://shopmargin-7w9.pages.dev`
+- Production domain: `https://shopfeecalc.com`
+- Production domain status: connected and verified.
 - GitHub repository: `https://github.com/nzd65f6tfc-source/shopmargin`
-- Latest production URL placeholders have been replaced with the Pages URL.
+- Latest production URL placeholders have been replaced with the production domain.
 - Current deployment method: Cloudflare Pages Direct Upload.
 
 ## Known Issues
@@ -59,7 +61,7 @@ The v1 page is:
 
 ## Next Business/Launch Tasks
 
-1. Choose and connect a production domain.
+1. Choose and connect a production domain. Done: `shopfeecalc.com`.
 2. Add a real contact email to privacy and disclaimer pages.
 3. Submit the site to Google Search Console.
 4. Submit `sitemap.xml`.

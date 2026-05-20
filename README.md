@@ -1,4 +1,4 @@
-# ShopMargin
+# ShopFeeCalc
 
 Free TikTok Shop fee calculators for US sellers.
 

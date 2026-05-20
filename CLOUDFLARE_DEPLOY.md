@@ -24,7 +24,7 @@ This project is plain static HTML/CSS/JavaScript, so no build step is required.
 
 Cloudflare will provide a temporary domain similar to:
 
-`https://shopmargin.pages.dev`
+`https://shopfeecalc.com`
 
 After you have the actual Pages URL, replace any placeholder domain references in:
 

@@ -3,7 +3,7 @@
 ## Before Deploy
 
 - Pick production domain.
-- Replace all `https://shopmargin.example` placeholders in:
+- Replace all placeholder domain references in:
   - `index.html`
   - `robots.txt`
   - `sitemap.xml`

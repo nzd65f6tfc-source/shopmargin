@@ -26,7 +26,7 @@ Cloudflare will provide a temporary domain similar to:
 
 `https://shopmargin.pages.dev`
 
-After you have the actual Pages URL, replace `https://shopmargin.example` in:
+After you have the actual Pages URL, replace any placeholder domain references in:
 
 - `index.html`
 - `robots.txt`

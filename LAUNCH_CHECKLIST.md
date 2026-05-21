@@ -2,7 +2,7 @@
 
 ## Before Deploy
 
-- Pick production domain.
+- Pick production domain. Done: `shopfeecalc.com`.
 - Replace all placeholder domain references in:
   - `index.html`
   - `robots.txt`
@@ -22,11 +22,13 @@
 - Confirm `robots.txt` loads. Done.
 - Confirm `sitemap.xml` loads. Done.
 - Confirm `privacy` and `disclaimer` pages load.
+- Confirm `www.shopfeecalc.com` redirects to `shopfeecalc.com`. Pending Cloudflare redirect rule.
 
 ## Deployment Follow-Up
 
 - Repair Cloudflare GitHub integration. Current workaround is Direct Upload.
 - Once repaired, confirm `git push` triggers a Cloudflare Pages production deployment.
+- Add a Cloudflare redirect rule from `www.shopfeecalc.com/*` to `shopfeecalc.com/*`.
 
 ## After Deploy
 

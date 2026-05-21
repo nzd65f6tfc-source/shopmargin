@@ -50,6 +50,7 @@ The v1 page is:
 - Cloudflare Pages URL: `https://shopmargin-7w9.pages.dev`
 - Production domain: `https://shopfeecalc.com`
 - Production domain status: connected and verified.
+- WWW domain: `https://www.shopfeecalc.com` is active. A 301 redirect to the root domain is still a follow-up.
 - GitHub repository: `https://github.com/nzd65f6tfc-source/shopmargin`
 - Latest production URL placeholders have been replaced with the production domain.
 - Current deployment method: Cloudflare Pages Direct Upload.
@@ -58,6 +59,7 @@ The v1 page is:
 
 - Cloudflare GitHub integration is installed for `nzd65f6tfc-source/shopmargin`, but Cloudflare returned `Error connecting to git account`.
 - Follow-up task: repair GitHub integration so future `git push` changes deploy automatically.
+- Follow-up task: add a Cloudflare redirect rule so `www.shopfeecalc.com/*` redirects to `shopfeecalc.com/*`.
 
 ## Next Business/Launch Tasks
 

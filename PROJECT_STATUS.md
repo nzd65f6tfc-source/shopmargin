@@ -59,6 +59,9 @@ The v1 page is:
 
 - Cloudflare GitHub integration is installed for `nzd65f6tfc-source/shopmargin`, but Cloudflare returned `Error connecting to git account`.
 - Follow-up task: repair GitHub integration so future `git push` changes deploy automatically.
+- GitHub CLI push instability was traced to process-level proxy variables pointing
+  at `127.0.0.1:9`. Plain `git push origin main` now works in this repository
+  after overriding proxy use in local Git config.
 
 ## Next Business/Launch Tasks
 

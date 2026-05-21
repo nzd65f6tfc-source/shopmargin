@@ -20,6 +20,28 @@ When creating the Pages project:
 
 This project is plain static HTML/CSS/JavaScript, so no build step is required.
 
+## GitHub Push Troubleshooting
+
+If `git push` or `git ls-remote` hangs or fails with a GitHub connection error,
+check whether the current shell process has proxy variables pointing at
+`127.0.0.1:9`.
+
+In this repository, the fix was to override proxy use in local Git config and
+keep HTTP/1.1 enabled:
+
+```powershell
+git config --local http.version HTTP/1.1
+git config --local http.proxy ""
+git config --local https.proxy ""
+```
+
+After that, verify with:
+
+```powershell
+git ls-remote --heads origin
+git push origin main
+```
+
 ## After First Deploy
 
 Cloudflare will provide a temporary domain similar to:

@@ -10,6 +10,7 @@
 - Add a real contact email to:
   - `privacy.html`
   - `disclaimer.html`
+  Done: `contact@shopfeecalc.com`.
 - Recheck fee disclaimer language.
 
 ## Deploy
@@ -22,13 +23,16 @@
 - Confirm `robots.txt` loads. Done.
 - Confirm `sitemap.xml` loads. Done.
 - Confirm `privacy` and `disclaimer` pages load.
-- Confirm `www.shopfeecalc.com` redirects to `shopfeecalc.com`. Pending Cloudflare redirect rule.
+- Confirm `www.shopfeecalc.com` redirects to `shopfeecalc.com`. Done.
+- Confirm Cloudflare Email Routing is enabled for `contact@shopfeecalc.com`. Done.
+- Confirm the forwarding destination email is verified. Done.
+- Test `contact@shopfeecalc.com` from an external sender. Pending.
 
 ## Deployment Follow-Up
 
 - Repair Cloudflare GitHub integration. Current workaround is Direct Upload.
 - Once repaired, confirm `git push` triggers a Cloudflare Pages production deployment.
-- Add a Cloudflare redirect rule from `www.shopfeecalc.com/*` to `shopfeecalc.com/*`.
+- Add a Cloudflare redirect rule from `www.shopfeecalc.com/*` to `shopfeecalc.com/*`. Done.
 
 ## After Deploy
 

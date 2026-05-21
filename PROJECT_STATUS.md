@@ -65,9 +65,16 @@ The v1 page is:
 
 1. Choose and connect a production domain. Done: `shopfeecalc.com`.
 2. Add a real contact email to privacy and disclaimer pages.
-3. Submit the site to Google Search Console.
-4. Submit `sitemap.xml`.
+3. Submit the site to Google Search Console. Done.
+4. Submit `sitemap.xml`. Done; Search Console initially showed "Could not fetch", likely temporary for a newly verified domain.
 5. Monitor impressions for the primary keyword and related seller-fee keywords.
+
+## Search Console
+
+- Domain property verified: `shopfeecalc.com`
+- Verification method: Google / Cloudflare DNS TXT authorization
+- Sitemap submitted: `https://shopfeecalc.com/sitemap.xml`
+- Main URL inspection submitted for priority crawling: `https://shopfeecalc.com/tiktok-shop-fee-calculator`
 
 ## Important Files
 

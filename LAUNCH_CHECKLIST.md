@@ -32,9 +32,9 @@
 
 ## After Deploy
 
-- Add the domain to Google Search Console.
-- Submit `sitemap.xml`.
-- Request indexing for the main calculator page.
+- Add the domain to Google Search Console. Done.
+- Submit `sitemap.xml`. Done; recheck status after Google processes it.
+- Request indexing for the main calculator page. Done for `https://shopfeecalc.com/tiktok-shop-fee-calculator`.
 - Track impressions for:
   - `tiktok shop fee calculator`
   - `tiktok shop fees calculator`

@@ -84,6 +84,8 @@ The v1 page is:
 - A same-Gmail test email was sent successfully, but Gmail did not place the
   self-sent alias copy in Inbox. Final delivery should be tested once from an
   external sender.
+- External delivery test passed: `1205971577@qq.com` sent a test email to
+  `contact@shopfeecalc.com`, and it arrived in the Gmail Inbox.
 
 ## Important Files
 

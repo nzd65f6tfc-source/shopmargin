@@ -26,7 +26,7 @@
 - Confirm `www.shopfeecalc.com` redirects to `shopfeecalc.com`. Done.
 - Confirm Cloudflare Email Routing is enabled for `contact@shopfeecalc.com`. Done.
 - Confirm the forwarding destination email is verified. Done.
-- Test `contact@shopfeecalc.com` from an external sender. Pending.
+- Test `contact@shopfeecalc.com` from an external sender. Done.
 
 ## Deployment Follow-Up
 

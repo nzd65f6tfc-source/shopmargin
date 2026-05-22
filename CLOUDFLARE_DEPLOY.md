@@ -58,13 +58,13 @@ check whether the current shell process has proxy variables pointing at
 `127.0.0.1:9`. Also check Git-specific proxy variables such as
 `GIT_HTTP_PROXY` and `GIT_HTTPS_PROXY`.
 
-In this repository, the fix was to override proxy use in local Git config and
-keep HTTP/1.1 enabled:
+On this machine, Windows uses a local proxy at `127.0.0.1:7897`. The stable
+local Git config for this repository is:
 
 ```powershell
 git config --local http.version HTTP/1.1
-git config --local http.proxy ""
-git config --local https.proxy ""
+git config --local http.proxy "http://127.0.0.1:7897"
+git config --local https.proxy "http://127.0.0.1:7897"
 ```
 
 For the current PowerShell session, clear proxy variables before retrying:

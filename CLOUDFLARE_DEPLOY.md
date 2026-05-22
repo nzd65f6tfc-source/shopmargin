@@ -2,7 +2,8 @@
 
 ## Recommended Setup
 
-Use Cloudflare Pages to deploy this static site from GitHub.
+Use GitHub Actions to deploy this static site to the existing Cloudflare Pages
+Direct Upload project.
 
 Repository:
 
@@ -10,7 +11,13 @@ Repository:
 
 ## Cloudflare Pages Settings
 
-When creating the Pages project:
+Current Pages project:
+
+- Project name: `shopmargin`
+- Production branch: `main`
+- Deployment type: Direct Upload
+
+If creating a new Git-integrated project from scratch:
 
 - Framework preset: `None`
 - Build command: leave empty
@@ -19,6 +26,24 @@ When creating the Pages project:
 - Production branch: `main`
 
 This project is plain static HTML/CSS/JavaScript, so no build step is required.
+
+## Automatic Deployments
+
+Because this Pages project was created with Direct Upload, it cannot be switched
+to Cloudflare's native Git integration later. Automatic deployment is handled by
+GitHub Actions instead.
+
+Required GitHub repository secrets:
+
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_API_TOKEN`
+
+Workflow file:
+
+- `.github/workflows/cloudflare-pages.yml`
+
+The workflow copies only public static assets into `dist/`, then deploys `dist/`
+to the existing `shopmargin` Pages project whenever `main` receives a push.
 
 ## GitHub Push Troubleshooting
 

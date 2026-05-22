@@ -45,11 +45,18 @@ Workflow file:
 The workflow copies only public static assets into `dist/`, then deploys `dist/`
 to the existing `shopmargin` Pages project whenever `main` receives a push.
 
+Current status:
+
+- GitHub Actions deployment is enabled and verified.
+- First successful workflow run: `Deploy to Cloudflare Pages #1`
+- Verified production URL: `https://shopfeecalc.com/`
+
 ## GitHub Push Troubleshooting
 
 If `git push` or `git ls-remote` hangs or fails with a GitHub connection error,
 check whether the current shell process has proxy variables pointing at
-`127.0.0.1:9`.
+`127.0.0.1:9`. Also check Git-specific proxy variables such as
+`GIT_HTTP_PROXY` and `GIT_HTTPS_PROXY`.
 
 In this repository, the fix was to override proxy use in local Git config and
 keep HTTP/1.1 enabled:
@@ -58,6 +65,14 @@ keep HTTP/1.1 enabled:
 git config --local http.version HTTP/1.1
 git config --local http.proxy ""
 git config --local https.proxy ""
+```
+
+For the current PowerShell session, clear proxy variables before retrying:
+
+```powershell
+foreach ($n in 'HTTP_PROXY','HTTPS_PROXY','ALL_PROXY','GIT_HTTP_PROXY','GIT_HTTPS_PROXY') {
+  Remove-Item "Env:$n" -ErrorAction SilentlyContinue
+}
 ```
 
 After that, verify with:

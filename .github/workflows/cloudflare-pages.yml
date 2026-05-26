@@ -21,7 +21,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p dist
-          cp index.html styles.css script.js privacy.html disclaimer.html robots.txt sitemap.xml _redirects dist/
+          cp index.html styles.css script.js privacy.html disclaimer.html robots.txt sitemap.xml ads.txt _redirects dist/
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3

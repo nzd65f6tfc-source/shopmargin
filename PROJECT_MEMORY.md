@@ -47,6 +47,7 @@ Key pages:
 - `index.html`
 - `privacy.html`
 - `disclaimer.html`
+- `ads.txt`
 - `robots.txt`
 - `sitemap.xml`
 
@@ -90,6 +91,17 @@ Email routing:
 - `contact@shopfeecalc.com`
 - Cloudflare Email Routing verified
 
+AdSense:
+
+- Publisher ID: `pub-7325891001032972`
+- AdSense script is installed on all public HTML pages.
+- `ads.txt` is deployed at `https://shopfeecalc.com/ads.txt`.
+- 2026-05-26: AdSense verified site ownership, requested site review, and
+  created the Google CMP European regulations message with the 3-option
+  consent flow.
+- Auto ads are enabled with overlapping formats disabled and in-page ads left
+  enabled for a less intrusive first monetization pass.
+
 ## Decisions
 
 - 2026-05-21: Use `shopfeecalc.com` as the production domain.
@@ -112,7 +124,7 @@ Avoid proxy variables pointing at `127.0.0.1:9`.
 
 ## Next Actions
 
-- Add analytics.
+- Wait for AdSense site approval and `ads.txt` status refresh.
 - Monitor Search Console indexing and impressions.
 - Plan the next related calculator or content page.
 - Review TikTok Shop fee assumptions.
